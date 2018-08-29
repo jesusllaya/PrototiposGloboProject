@@ -1,0 +1,72 @@
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>Globo Project</h3>
+            <strong>BS</strong>
+        </div>
+
+        <ul class="list-unstyled components">
+                <li class="active">
+                        <a href="#">
+                            <i class="fas fa-briefcase"></i>
+                            Home
+                        </a>
+                    </li>
+            <li>
+                
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-home"></i>
+                    Mis Proyectos
+                </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="newProject">Nuevo Proyecto</a>
+                    </li>
+                    <li>
+                        <a href="#">Proyectos Aceptados</a>
+                    </li>
+                    <li>
+                        <a href="#">Proyectos en Bandeja</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-briefcase"></i>
+                    Mis Tareas
+                </a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-copy"></i>
+                    Mis Recursos
+                </a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="miJuan">JUAN</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                    <div>
+                            <router-outlet></router-outlet>
+                    </div>      
+            </div>
+        </nav>
+    </div>
+</div>
+

@@ -1,0 +1,113 @@
+<form [formGroup]="projectForm" (ngSubmit)="onSubmit()">
+  <h1>New Project</h1>
+
+  <div class="form-group">
+      <label>Name:
+          <input type="text" formControlName="nameProject" class="form-control" placeholder="Write a name" required>
+      </label>
+  </div>
+  <div class="form-group">
+      <label>
+          Description:
+          <input type="text" formControlName="description" class="form-control" placeholder="Write a description" required>
+      </label>
+  </div>
+  <div class="form-group">
+      <label>
+          Project Type:
+          <select class="form-control" required>
+              <option>Add new Project Type</option>
+              <option>OutDoor</option>
+              <option>InDoor</option>
+              <option>Drive Test</option>
+            </select>
+      </label>
+  </div>
+  <div class="form-group">
+      <label>
+          Client select:
+          <select class="form-control" required>
+              <option>Add new Client</option>
+              <option>Claro</option>
+              <option>Movistar</option>
+              <option>Personal</option>
+            </select>
+      </label>
+  </div>
+  <div class="form-group">
+      <label>
+          Project Leader:
+          <select class="form-control" required>
+              <option>Add new Project Leader</option>
+              <option>Llaya Jesus</option>
+              <option>Pra Adolfo</option>
+          </select>
+      </label>
+  </div>
+  <div class="form-group">
+      <label>
+          Estimated Start Date:
+          <input type="date" formControlName="estimatedStartDate" class="form-control" required>
+      </label>
+  </div>
+  <div class="form-group">
+      <label>
+          Estimated Finish Date:
+          <input type="date" formControlName="estimatedFinishDate" class="form-control" required>
+      </label>
+  </div>
+  <div formGroupName="location" class="form-group">
+      <label>
+          Street:
+          <input type="text" formControlName="street" required class="form-control" required>
+      </label>
+      <label>
+          City:
+          <select class="form-control" required>
+              <option>Capital</option>
+              <option>Rio Cuarto</option>
+          </select>
+      </label>
+      <label>
+          State:
+          <select class="form-control" required>
+              <option>Cordoba</option>
+              <option>Salta</option>
+          </select>
+      </label>
+  </div>
+  <div class="form-group">
+      <button type="submit" [disabled]="!projectForm.valid" class="btn btn-primary">Save</button>
+  </div>
+       
+
+
+            
+  </form>
+
+  <p>
+    Estado del Formulario: {{projectForm.status}}
+  </p>
+
+  <!--
+  <div formArrayName="alias">
+      <h3>Aliases</h3> <button (click)="addAlias()">Add Alias</button>
+    
+      <div *ngFor="let address of alias.controls; let i=index">
+      
+        <label>
+          Alias:
+          <input type="text" [formControlName]="i">
+        </label>
+      </div>
+    </div>
+  -->
+
+
+
+
+
+
+
+
+
