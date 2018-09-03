@@ -19,8 +19,10 @@ export class NewProjectComponent implements OnInit {
     projectLeader: new FormControl(''),
     estimatedStartDate: new FormControl(''),
     estimatedFinishDate: new FormControl(''),
+    sitio: new FormControl(''),
     location: this.fb.group({
       street: ['',Validators.required],
+      nro: [''],
       city: [''],
       state: ['']
     }),

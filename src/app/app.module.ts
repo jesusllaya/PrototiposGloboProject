@@ -6,19 +6,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
-import { JuanComponent } from '../app/components/juan/juan.component';
 import { appRoutes } from './app.routing';
 import { Routes, RouterModule } from '@angular/router';
 import { PruebaMenuComponent } from './prueba-menu/prueba-menu.component';
 import { NewProjectComponent } from './components/new-project/new-project.component';
+import { NewClientComponent } from './components/new-client/new-client.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyNavComponent,
-    JuanComponent,
+    NewProjectComponent,
     PruebaMenuComponent,
-    NewProjectComponent
+    NewClientComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
